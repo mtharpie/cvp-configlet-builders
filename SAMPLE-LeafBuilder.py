@@ -89,7 +89,7 @@ def get_routed_info(interfaces):
         
     return routed_info
 
-# Start of Script
+# Start of Configuration Output
 node_info = get_net_element(cvp_vars.getValue(cvp_names.CVP_MAC))
 hostname = node_info['fqdn'].split('.')[0]
 routed_info = get_routed_info(routed_ints)
