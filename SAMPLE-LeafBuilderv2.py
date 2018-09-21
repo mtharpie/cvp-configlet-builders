@@ -131,7 +131,7 @@ vlan 4094
    
 no spanning-tree vlan 4094
 
-interface Vlan4050
+interface Vlan4094
    description peer-link-svi
    ip address {0}/30
 
@@ -152,7 +152,7 @@ mlag configuration
    domain-id tharpie
    local-interface Vlan4094
    peer-address {1}
-   peer-link Port-Channel2000
+   peer-link Port-Channel100
    reload-delay mlag 360
    reload-delay non-mlag 300
 '''.format(mlag_ip, mlag_peer)
